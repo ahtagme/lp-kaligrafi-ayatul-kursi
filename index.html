@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Kaligrafi Ayatul Kursi Premium ACP Mirror Gold 50x60 - Dekorasi Dinding Islami Mewah</title>
 <meta name="description" content="Kaligrafi Ayatul Kursi Premium bahan ACP Mirror Gold ukuran 50x60 CM. Dekorasi dinding islami mewah tahan puluhan tahun. Gratis ongkir & garansi 100% uang kembali.">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -84,12 +84,25 @@ tailwind.config = {
   .ribbon { position: absolute; top: 18px; left: -8px; background: linear-gradient(135deg, #C0392B, #E74C3C); color: white; padding: 6px 20px 6px 14px; font-weight: 800; font-size: 13px; z-index: 10; clip-path: polygon(0 0, 100% 0, 92% 50%, 100% 100%, 0 100%); }
 
   ::selection { background: rgba(212,175,55,0.3); color: #fff; }
+
+  @media (max-width: 640px) {
+    body { padding-bottom: 70px; }
+    .ooef input, .ooef select, .ooef textarea { font-size: 16px !important; }
+    .faq-item.active .faq-answer { max-height: 500px; }
+    .benefit-card:hover { transform: none; }
+  }
+
+  @supports (padding-bottom: env(safe-area-inset-bottom)) {
+    @media (max-width: 640px) {
+      body { padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+    }
+  }
 </style>
 </head>
 <body>
 
 <!-- NOTIFICATION POPUP -->
-<div id="notifPopup" class="notification-popup fixed top-4 right-4 z-50 max-w-xs rounded-xl bg-dark-card border border-gold/30 p-4 shadow-2xl">
+<div id="notifPopup" class="notification-popup fixed top-3 right-3 sm:top-4 sm:right-4 z-50 max-w-[280px] sm:max-w-xs rounded-xl bg-dark-card border border-gold/30 p-3 sm:p-4 shadow-2xl">
   <div class="flex items-start gap-3">
     <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold text-lg">&#10003;</div>
     <div>
@@ -101,13 +114,13 @@ tailwind.config = {
 </div>
 
 <!-- STICKY CTA BOTTOM -->
-<div id="stickyCta" class="sticky-cta fixed bottom-0 left-0 right-0 z-40 border-t border-gold/20 bg-dark/95 backdrop-blur-md px-4 py-3 md:hidden">
+<div id="stickyCta" class="sticky-cta fixed bottom-0 left-0 right-0 z-40 border-t border-gold/20 bg-dark/95 backdrop-blur-md px-4 pt-3 md:hidden" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom));">
   <div class="flex items-center justify-between gap-3">
     <div>
-      <p class="text-xs text-gray-400 line-through">Rp 499.000</p>
-      <p class="text-lg font-black text-gold">Rp 245.000</p>
+      <p class="text-[10px] text-gray-400 line-through">Rp 499.000</p>
+      <p class="text-base font-black text-gold">Rp 245.000</p>
     </div>
-    <a href="#order-form" class="gold-gradient-bg rounded-xl px-6 py-3 text-sm font-black text-dark uppercase tracking-wide">
+    <a href="#order-form" class="gold-gradient-bg rounded-xl px-5 py-3.5 text-sm font-black text-dark uppercase tracking-wide min-h-[48px] flex items-center">
       ORDER SEKARANG
     </a>
   </div>
@@ -119,32 +132,32 @@ tailwind.config = {
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gold/5 rounded-full blur-3xl"></div>
   <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gold/3 rounded-full blur-3xl"></div>
 
-  <div class="relative z-10 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+  <div class="relative z-10 mx-auto max-w-7xl px-4 py-12 sm:py-20 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 items-center">
       <div class="order-2 lg:order-1">
         <div class="inline-flex items-center gap-2 rounded-full bg-gold/10 border border-gold/30 px-4 py-2 text-xs font-bold text-gold uppercase tracking-widest mb-6">
           <span class="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
           PROMO TERBATAS &mdash; STOK TINGGAL 23 PCS
         </div>
 
-        <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-6">
+        <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-black leading-[1.1] mb-4 sm:mb-6">
           Kaligrafi<br>
           <span class="gold-shimmer">Ayatul Kursi</span><br>
           <span class="text-white">ACP Mirror Gold</span>
         </h1>
 
-        <p class="text-lg sm:text-xl text-gray-300 leading-relaxed mb-4 max-w-xl">
+        <p class="text-base sm:text-xl text-gray-300 leading-relaxed mb-4 max-w-xl">
           Dekorasi dinding islami <strong class="text-gold">bahan ACP Mirror lapis emas</strong> ukuran <strong class="text-white">50x60 CM</strong> yang bikin ruangan Anda terlihat <strong class="text-white">10x lebih mewah</strong> dalam hitungan detik.
         </p>
 
-        <div class="flex flex-wrap items-center gap-3 mb-8">
+        <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-6 sm:mb-8">
           <span class="flex items-center gap-1.5 rounded-lg bg-green-900/30 border border-green-700/30 px-3 py-1.5 text-xs font-bold text-green-400">&#10003; Garansi 100% Uang Kembali</span>
           <span class="flex items-center gap-1.5 rounded-lg bg-blue-900/30 border border-blue-700/30 px-3 py-1.5 text-xs font-bold text-blue-400">&#10003; Gratis Ongkir</span>
           <span class="flex items-center gap-1.5 rounded-lg bg-gold/10 border border-gold/30 px-3 py-1.5 text-xs font-bold text-gold">&#10003; COD Tersedia</span>
         </div>
 
         <!-- Price -->
-        <div class="rounded-2xl bg-dark-card border border-dark-border p-6 mb-8 max-w-md">
+        <div class="rounded-2xl bg-dark-card border border-dark-border p-4 sm:p-6 mb-6 sm:mb-8 max-w-md">
           <div class="flex items-center gap-2 mb-2">
             <span class="text-xs font-bold text-red-400 bg-red-900/30 px-2 py-0.5 rounded">HEMAT 51%</span>
             <span class="text-sm text-gray-500 line-through">Rp 499.000</span>
@@ -155,7 +168,7 @@ tailwind.config = {
           <p class="text-xs text-gray-500 mt-2">*Harga promo bisa berubah sewaktu-waktu tanpa pemberitahuan</p>
         </div>
 
-        <a href="#order-form" class="pulse-cta inline-flex items-center gap-3 gold-gradient-bg rounded-2xl px-10 py-5 text-lg font-black text-dark uppercase tracking-wide shadow-2xl hover:shadow-gold/30 transition-shadow">
+        <a href="#order-form" class="pulse-cta flex sm:inline-flex items-center justify-center gap-3 gold-gradient-bg rounded-2xl px-8 sm:px-10 py-4 sm:py-5 text-base sm:text-lg font-black text-dark uppercase tracking-wide shadow-2xl hover:shadow-gold/30 transition-shadow w-full sm:w-auto max-w-md">
           ORDER SEKARANG &darr;
         </a>
         <p class="text-xs text-gray-600 mt-3">Klik tombol di atas &rarr; Langsung ke form pemesanan</p>
@@ -163,16 +176,15 @@ tailwind.config = {
 
       <!-- Hero Image -->
       <div class="order-1 lg:order-2 flex justify-center">
-        <div class="relative">
+        <div class="relative max-w-[280px] sm:max-w-md lg:max-w-lg mx-auto">
           <div class="absolute inset-0 bg-gold/10 rounded-full blur-3xl scale-110"></div>
-          <img src="img/hero.webp" alt="Kaligrafi Ayatul Kursi Premium ACP Mirror Gold 50x60 CM" class="relative z-10 w-full max-w-lg float drop-shadow-2xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="relative z-10 hidden w-full max-w-lg aspect-square rounded-full bg-gradient-to-br from-gold/20 to-gold/5 border-2 border-gold/30 items-center justify-center flex-col gap-4 text-center p-12">
-            <div class="text-6xl">&#9790;</div>
-            <p class="text-gold font-display text-3xl font-bold">Ayatul Kursi</p>
-            <p class="text-gray-500 text-sm">ACP Mirror Gold 50x60 CM</p>
-            <p class="text-[10px] text-gray-600 mt-4 bg-dark-card px-3 py-1 rounded-full">Tambahkan foto produk di folder img/hero.webp</p>
+          <img src="img/hero.webp" alt="Kaligrafi Ayatul Kursi Premium ACP Mirror Gold 50x60 CM" class="relative z-10 w-full float drop-shadow-2xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="relative z-10 hidden w-full aspect-square rounded-full bg-gradient-to-br from-gold/20 to-gold/5 border-2 border-gold/30 items-center justify-center flex-col gap-3 sm:gap-4 text-center p-8 sm:p-12">
+            <div class="text-4xl sm:text-6xl">&#9790;</div>
+            <p class="text-gold font-display text-xl sm:text-3xl font-bold">Ayatul Kursi</p>
+            <p class="text-gray-500 text-xs sm:text-sm">ACP Mirror Gold 50x60 CM</p>
           </div>
-          <div class="absolute -top-4 -right-4 z-20 bg-red-600 text-white text-xs font-black px-4 py-2 rounded-full animate-bounce shadow-lg">
+          <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 z-20 bg-red-600 text-white text-[10px] sm:text-xs font-black px-3 py-1.5 sm:px-4 sm:py-2 rounded-full animate-bounce shadow-lg">
             BEST SELLER!
           </div>
         </div>
@@ -200,10 +212,10 @@ tailwind.config = {
 </div>
 
 <!-- ==================== MASALAH / PAIN POINTS ==================== -->
-<section class="py-16 sm:py-24 relative">
+<section class="py-10 sm:py-24 relative">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12 fade-up">
-      <h2 class="font-display text-3xl sm:text-4xl font-black mb-4">
+    <div class="text-center mb-8 sm:mb-12 fade-up">
+      <h2 class="font-display text-2xl sm:text-4xl font-black mb-4">
         Dinding Rumah Anda Masih <span class="text-red-400">Kosong & Membosankan?</span>
       </h2>
       <div class="ornament-line w-24 mx-auto my-6"></div>
@@ -237,16 +249,16 @@ tailwind.config = {
 </section>
 
 <!-- ==================== GALERI PRODUK ==================== -->
-<section class="py-16 sm:py-24 bg-dark-soft relative">
+<section class="py-10 sm:py-24 bg-dark-soft relative">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12 fade-up">
-      <p class="text-gold font-bold text-sm uppercase tracking-widest mb-3">Lihat Langsung Keindahannya</p>
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+    <div class="text-center mb-8 sm:mb-12 fade-up">
+      <p class="text-gold font-bold text-xs sm:text-sm uppercase tracking-widest mb-2 sm:mb-3">Lihat Langsung Keindahannya</p>
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         Mewah, Elegan, <span class="gold-gradient">Penuh Berkah</span>
       </h2>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 fade-up">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 fade-up">
       <div class="col-span-2 md:col-span-1 md:row-span-2 relative rounded-2xl overflow-hidden group">
         <img src="img/hero.webp" alt="Kaligrafi Ayatul Kursi ACP Mirror - Terpasang di Dinding" class="w-full h-full object-cover gallery-img" loading="lazy">
         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark to-transparent p-4">
@@ -272,18 +284,18 @@ tailwind.config = {
 </section>
 
 <!-- ==================== KEUNGGULAN ==================== -->
-<section class="py-16 sm:py-24 relative">
+<section class="py-10 sm:py-24 relative">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-14 fade-up">
-      <p class="text-gold font-bold text-sm uppercase tracking-widest mb-3">Bukan Kaligrafi Biasa</p>
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+    <div class="text-center mb-8 sm:mb-14 fade-up">
+      <p class="text-gold font-bold text-xs sm:text-sm uppercase tracking-widest mb-2 sm:mb-3">Bukan Kaligrafi Biasa</p>
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         7 Alasan Kenapa <span class="gold-gradient">12.000+ Orang</span> Sudah Memilih Ini
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="benefit-card rounded-2xl p-6 fade-up">
-        <div class="text-3xl mb-4">&#128142;</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+      <div class="benefit-card rounded-2xl p-5 sm:p-6 fade-up">
+        <div class="text-2xl sm:text-3xl mb-3 sm:mb-4">&#128142;</div>
         <h3 class="text-lg font-bold text-gold mb-2">ACP Mirror Lapis Emas</h3>
         <p class="text-sm text-gray-400 leading-relaxed">Bukan plastik, bukan kayu. Bahan ACP (Aluminium Composite Panel) Mirror premium dengan efek cermin gold yang memantulkan cahaya. Anti luntur, anti karat, tahan puluhan tahun tanpa perawatan.</p>
       </div>
@@ -317,10 +329,10 @@ tailwind.config = {
 </section>
 
 <!-- ==================== PERBANDINGAN ==================== -->
-<section class="py-16 sm:py-24 bg-dark-soft">
+<section class="py-10 sm:py-24 bg-dark-soft">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12 fade-up">
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+    <div class="text-center mb-8 sm:mb-12 fade-up">
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         Kaligrafi Biasa vs <span class="gold-gradient">Kaligrafi ACP Mirror Gold</span>
       </h2>
       <p class="text-gray-500 mt-3">Jangan salah pilih. Bedanya jauh!</p>
@@ -356,38 +368,36 @@ tailwind.config = {
 <!-- ==================== COUNTDOWN URGENCY ==================== -->
 <section class="py-12 sm:py-16 relative">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-    <div class="countdown-box rounded-3xl p-8 sm:p-12 text-center fade-up box-glow-gold">
-      <div class="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-red-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6 animate-pulse">
+    <div class="countdown-box rounded-2xl sm:rounded-3xl p-5 sm:p-12 text-center fade-up box-glow-gold">
+      <div class="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-red-400 text-[10px] sm:text-xs font-bold px-3 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 animate-pulse">
         &#9888; PERINGATAN: PROMO HAMPIR BERAKHIR
       </div>
-      <h2 class="font-display text-2xl sm:text-4xl font-black mb-3">
+      <h2 class="font-display text-xl sm:text-4xl font-black mb-3">
         Harga Promo <span class="text-red-400">Naik</span> Dalam:
       </h2>
-      <div class="flex justify-center gap-4 my-8">
-        <div class="bg-dark rounded-xl border border-gold/30 px-4 sm:px-6 py-3 sm:py-4 min-w-[70px]">
-          <div class="text-2xl sm:text-4xl font-black text-gold" id="countH">05</div>
-          <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Jam</div>
+      <div class="flex justify-center gap-2 sm:gap-4 my-5 sm:my-8">
+        <div class="bg-dark rounded-xl border border-gold/30 px-3 sm:px-6 py-2.5 sm:py-4 min-w-[60px] sm:min-w-[70px]">
+          <div class="text-xl sm:text-4xl font-black text-gold" id="countH">05</div>
+          <div class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-wider mt-1">Jam</div>
         </div>
-        <div class="text-2xl sm:text-4xl font-bold text-gold self-center">:</div>
-        <div class="bg-dark rounded-xl border border-gold/30 px-4 sm:px-6 py-3 sm:py-4 min-w-[70px]">
-          <div class="text-2xl sm:text-4xl font-black text-gold" id="countM">42</div>
-          <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Menit</div>
+        <div class="text-xl sm:text-4xl font-bold text-gold self-center">:</div>
+        <div class="bg-dark rounded-xl border border-gold/30 px-3 sm:px-6 py-2.5 sm:py-4 min-w-[60px] sm:min-w-[70px]">
+          <div class="text-xl sm:text-4xl font-black text-gold" id="countM">42</div>
+          <div class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-wider mt-1">Menit</div>
         </div>
-        <div class="text-2xl sm:text-4xl font-bold text-gold self-center">:</div>
-        <div class="bg-dark rounded-xl border border-gold/30 px-4 sm:px-6 py-3 sm:py-4 min-w-[70px]">
-          <div class="text-2xl sm:text-4xl font-black text-gold" id="countS">18</div>
-          <div class="text-[10px] text-gray-500 uppercase tracking-wider mt-1">Detik</div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <div>
-          <span class="text-gray-500 line-through text-lg">Rp 499.000</span>
-          <span class="text-4xl sm:text-5xl font-black text-gold ml-3">Rp 245.000</span>
+        <div class="text-xl sm:text-4xl font-bold text-gold self-center">:</div>
+        <div class="bg-dark rounded-xl border border-gold/30 px-3 sm:px-6 py-2.5 sm:py-4 min-w-[60px] sm:min-w-[70px]">
+          <div class="text-xl sm:text-4xl font-black text-gold" id="countS">18</div>
+          <div class="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-wider mt-1">Detik</div>
         </div>
       </div>
-      <p class="text-xs text-gray-500 mt-3">Setelah waktu habis, harga kembali ke Rp 499.000. Tanpa pengecualian.</p>
+      <div class="flex flex-col items-center justify-center gap-1">
+        <span class="text-gray-500 line-through text-sm sm:text-lg">Rp 499.000</span>
+        <span class="text-3xl sm:text-5xl font-black text-gold">Rp 245.000</span>
+      </div>
+      <p class="text-[10px] sm:text-xs text-gray-500 mt-2 sm:mt-3">Setelah waktu habis, harga kembali ke Rp 499.000. Tanpa pengecualian.</p>
 
-      <a href="#order-form" class="pulse-cta inline-flex items-center gap-3 gold-gradient-bg rounded-2xl px-10 py-5 text-lg font-black text-dark uppercase tracking-wide mt-8 shadow-2xl">
+      <a href="#order-form" class="pulse-cta flex sm:inline-flex items-center justify-center gap-2 sm:gap-3 gold-gradient-bg rounded-2xl px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-lg font-black text-dark uppercase tracking-wide mt-6 sm:mt-8 shadow-2xl w-full sm:w-auto">
         AMANKAN SEKARANG SEBELUM HABIS
       </a>
     </div>
@@ -395,11 +405,11 @@ tailwind.config = {
 </section>
 
 <!-- ==================== TESTIMONI ==================== -->
-<section class="py-16 sm:py-24 bg-dark-soft">
+<section class="py-10 sm:py-24 bg-dark-soft">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-14 fade-up">
       <p class="text-gold font-bold text-sm uppercase tracking-widest mb-3">Kata Mereka yang Sudah Beli</p>
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         12.000+ Pelanggan <span class="gold-gradient">Tidak Mungkin Bohong</span>
       </h2>
     </div>
@@ -487,10 +497,10 @@ tailwind.config = {
 </section>
 
 <!-- ==================== EDUKASI TERSELUBUNG ==================== -->
-<section class="py-16 sm:py-24">
+<section class="py-10 sm:py-24">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 fade-up">
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         Tahukah Anda? <span class="gold-gradient">Keutamaan Ayatul Kursi</span>
       </h2>
     </div>
@@ -528,11 +538,11 @@ tailwind.config = {
 </section>
 
 <!-- ==================== GARANSI & ANTI RETUR ==================== -->
-<section class="py-16 sm:py-24 bg-dark-soft">
+<section class="py-10 sm:py-24 bg-dark-soft">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
     <div class="rounded-3xl border-2 border-gold/30 bg-dark p-8 sm:p-12 text-center fade-up box-glow-gold">
       <div class="text-6xl mb-6">&#128170;</div>
-      <h2 class="font-display text-3xl sm:text-4xl font-black mb-4">
+      <h2 class="font-display text-2xl sm:text-4xl font-black mb-4">
         GARANSI <span class="gold-gradient">100% UANG KEMBALI</span>
       </h2>
       <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto mb-6">
@@ -563,10 +573,10 @@ tailwind.config = {
 </section>
 
 <!-- ==================== SPESIFIKASI ==================== -->
-<section class="py-16 sm:py-24">
+<section class="py-10 sm:py-24">
   <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 fade-up">
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         Spesifikasi <span class="gold-gradient">Detail Produk</span>
       </h2>
     </div>
@@ -617,10 +627,10 @@ tailwind.config = {
 </section>
 
 <!-- ==================== FAQ ==================== -->
-<section class="py-16 sm:py-24 bg-dark-soft">
+<section class="py-10 sm:py-24 bg-dark-soft">
   <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 fade-up">
-      <h2 class="font-display text-3xl sm:text-4xl font-black">
+      <h2 class="font-display text-2xl sm:text-4xl font-black">
         Pertanyaan <span class="gold-gradient">yang Sering Ditanyakan</span>
       </h2>
     </div>
@@ -690,41 +700,41 @@ tailwind.config = {
 </section>
 
 <!-- ==================== FINAL CTA ==================== -->
-<section class="py-20 sm:py-28 relative overflow-hidden">
+<section class="py-12 sm:py-28 relative overflow-hidden">
   <div class="absolute inset-0 bg-gradient-to-br from-dark via-dark-soft to-dark"></div>
   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl"></div>
 
   <div class="relative z-10 mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
     <div class="fade-up">
-      <div class="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-red-400 text-xs font-bold px-4 py-1.5 rounded-full mb-6 animate-pulse">
+      <div class="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 text-red-400 text-[10px] sm:text-xs font-bold px-3 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 animate-pulse">
         &#9888; STOK TINGGAL 23 PCS &mdash; TIDAK RESTOCK DALAM WAKTU DEKAT
       </div>
 
-      <h2 class="font-display text-3xl sm:text-5xl font-black leading-tight mb-6">
+      <h2 class="font-display text-2xl sm:text-5xl font-black leading-tight mb-4 sm:mb-6">
         Jangan Tunggu Sampai<br><span class="gold-shimmer">Harga Naik & Stok Habis</span>
       </h2>
 
-      <p class="text-gray-400 text-lg leading-relaxed mb-4 max-w-xl mx-auto">
+      <p class="text-gray-400 text-sm sm:text-lg leading-relaxed mb-4 max-w-xl mx-auto">
         Ribuan orang sudah merasakan keindahan Kaligrafi Ayatul Kursi ACP Mirror Gold di rumah mereka. <strong class="text-white">Sekarang giliran Anda.</strong>
       </p>
 
-      <div class="rounded-2xl bg-dark-card border border-gold/30 p-6 inline-block mb-8">
-        <div class="flex items-center gap-4 justify-center flex-wrap">
+      <div class="rounded-2xl bg-dark-card border border-gold/30 p-4 sm:p-6 inline-block mb-6 sm:mb-8">
+        <div class="flex items-center gap-3 sm:gap-4 justify-center">
           <div class="text-center">
-            <p class="text-xs text-gray-500 line-through">Rp 499.000</p>
-            <p class="text-3xl sm:text-4xl font-black text-gold">Rp 245.000</p>
+            <p class="text-[10px] sm:text-xs text-gray-500 line-through">Rp 499.000</p>
+            <p class="text-2xl sm:text-4xl font-black text-gold">Rp 245.000</p>
           </div>
-          <div class="hidden sm:block h-12 w-px bg-gold/20"></div>
-          <div class="flex flex-col gap-1">
-            <span class="flex items-center gap-1.5 text-xs text-green-400 font-bold">&#10003; Gratis Ongkir</span>
-            <span class="flex items-center gap-1.5 text-xs text-green-400 font-bold">&#10003; Bisa COD</span>
-            <span class="flex items-center gap-1.5 text-xs text-green-400 font-bold">&#10003; Garansi 100%</span>
+          <div class="h-10 sm:h-12 w-px bg-gold/20"></div>
+          <div class="flex flex-col gap-0.5 sm:gap-1">
+            <span class="flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs text-green-400 font-bold">&#10003; Gratis Ongkir</span>
+            <span class="flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs text-green-400 font-bold">&#10003; Bisa COD</span>
+            <span class="flex items-center gap-1 sm:gap-1.5 text-[10px] sm:text-xs text-green-400 font-bold">&#10003; Garansi 100%</span>
           </div>
         </div>
       </div>
 
       <!-- OrderOnline Form -->
-      <div id="order-form" class="mt-4 mx-auto max-w-md w-full">
+      <div id="order-form" class="mx-auto max-w-md w-full text-left" style="scroll-margin-top: 20px;">
         <div class="ooef">
           <form class="orderonline-embed-form" data-username="ahtashop" data-product-slug="kaligrafi-ayat-kursi" data-product-id="69e1db118f0e8c9ecf005bed" id="oo-embed-form-hero" data-origin="orderonline">
             <div class="ooef-loader"><div aria-live="polite" role="status"><div>Loading...</div></div></div>
@@ -732,19 +742,19 @@ tailwind.config = {
         </div>
       </div>
 
-      <p class="text-xs text-gray-600 mt-4">Admin online 08.00 - 22.00 WIB | Fast Response</p>
+      <p class="text-[10px] sm:text-xs text-gray-600 mt-4">Admin online 08.00 - 22.00 WIB | Fast Response</p>
 
-      <div class="flex items-center justify-center gap-6 mt-8 flex-wrap">
-        <span class="flex items-center gap-2 text-xs text-gray-500">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      <div class="flex items-center justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 flex-wrap">
+        <span class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-gray-500">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
           Transaksi Aman
         </span>
-        <span class="flex items-center gap-2 text-xs text-gray-500">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-gray-500">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           Garansi Resmi
         </span>
-        <span class="flex items-center gap-2 text-xs text-gray-500">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+        <span class="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-gray-500">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
           Multi Payment
         </span>
       </div>
@@ -755,7 +765,7 @@ tailwind.config = {
 <!-- ==================== FOOTER ==================== -->
 <footer class="border-t border-dark-border py-8">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-    <p class="text-sm text-gray-600">&copy; 2025 kuningandekor.com &mdash; Dekorasi Islami Premium</p>
+    <p class="text-sm text-gray-600">&copy; 2026 kuningandekor.com &mdash; Dekorasi Islami Premium</p>
     <p class="text-xs text-gray-700 mt-2">Disclaimer: Hasil bisa berbeda tergantung pencahayaan dan sudut pengambilan foto. Warna mendekati asli.</p>
   </div>
 </footer>
