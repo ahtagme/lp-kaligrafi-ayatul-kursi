@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kaligrafi.kuningandekor.com/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kaligrafi.kuningandekor.com/img/hero.webp</image:loc>
+      <image:caption>Kaligrafi Ayatul Kursi ACP Mirror Gold 50x60 CM - Dekorasi Dinding Islami Premium</image:caption>
+      <image:title>Kaligrafi Ayatul Kursi Premium ACP Mirror Gold</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kaligrafi.kuningandekor.com/img/1.webp</image:loc>
+      <image:caption>Kaligrafi Ayatul Kursi ACP Mirror Gold di interior ruang tamu mewah</image:caption>
+      <image:title>Kaligrafi Ayatul Kursi Interior Ruang Tamu</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kaligrafi.kuningandekor.com/img/2.webp</image:loc>
+      <image:caption>Detail close-up kaligrafi Ayatul Kursi ACP Mirror efek 3D timbul gold</image:caption>
+      <image:title>Detail Close-Up Kaligrafi Ayatul Kursi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kaligrafi.kuningandekor.com/img/3.webp</image:loc>
+      <image:caption>Kaligrafi Ayatul Kursi hitam gold terpasang di dinding</image:caption>
+      <image:title>Kaligrafi Ayatul Kursi di Dinding</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://kaligrafi.kuningandekor.com/img/4.webp</image:loc>
+      <image:caption>Kaligrafi Ayatul Kursi ACP Mirror Gold efek cermin premium</image:caption>
+      <image:title>Kaligrafi Ayatul Kursi Efek Mirror</image:title>
+    </image:image>
+  </url>
+</urlset>

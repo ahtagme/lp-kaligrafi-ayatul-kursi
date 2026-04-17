@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /img/raw/
+
+Sitemap: https://kaligrafi.kuningandekor.com/sitemap.xml
